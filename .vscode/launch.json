@@ -1,0 +1,11 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Launch Chrome",
+      "file": "${workspaceFolder}/Dia_11_11/index.html"
+    }
+  ]
+}
