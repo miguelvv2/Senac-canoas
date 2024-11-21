@@ -134,6 +134,15 @@ header nav ul li:hover {
   height: 100%;
 }
 
+.ilustration img {
+  transition: all 0.5s ease-in-out;
+}
+
+.ilustration img:hover {
+  transform: scale(1.2);
+  filter: grayscale(1.5);
+}
+
 .s-about {
   flex-direction: column;
   width: 100%;
@@ -328,4 +337,13 @@ footer {
 footer i {
   font-size: 1.4rem;
   color: var(--brand-color);
+}
+
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
