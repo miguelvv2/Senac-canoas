@@ -1,0 +1,195 @@
+:root {
+  --brand-color: #f1a5b1;
+  --dark: #0b0a0a;
+  --white: #fff;
+
+  --text-font: "Archivo", serif;
+  --title-font: "Andada Pro", serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: transparent;
+
+  width: 100%;
+}
+
+body {
+  background: url(assets/Arcane.jpg )no-repeat;
+  background-size:cover;
+ box-shadow: inset 0 0 1000px rgba(0, 0, 0, 0.5);
+justify-content:start;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; 
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.4rem 0;
+}
+header img{
+  width:5rem;
+  
+}
+header nav {
+  display: none;
+}
+
+main {
+  width: 32.7rem;
+
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+  color: var(--white);
+}
+
+main img {
+  width: 100rem;
+border-radius: 20px;
+  display: flex;
+  margin: 0 auto;
+}
+
+main h1 {
+  width: 100%;
+  max-width: 32.7rem; 
+  padding-top: 2.4rem; 
+  text-align: start ;
+  margin-top:3rem;
+} 
+main  {
+  font-family: var(--title-font);
+  font-size:3rem;
+  font-weight: 800;
+margin-bottom:2rem;
+  line-height: 110%;
+  margin-bottom: 1.6rem; 
+  justify-content:start;
+  margin:0;
+  
+}
+
+main p {
+  font-family: var(--text-font);
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 150%;
+  padding-bottom: 4rem;
+  margin-top:3rem;
+
+}
+
+.primary-btn {
+  color: var(--dark);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+
+  background-color: var(--brand-color);
+  border-radius: 0.4rem;
+
+  padding: 1.4rem 0;
+}
+
+.primary-btn,
+.secondary-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  transition: all 0.2s ease-in-out;
+}
+
+.secondary-btn {
+  color: var(--white);
+
+  border: 2px solid var(--brand-color);
+  border-radius: 0.4rem;
+
+  padding: 1.55rem 0;
+
+  margin-top: 3.2rem;
+}
+
+.primary-btn:hover,
+.secondary-btn:hover {
+  opacity: 0.8;
+}
+
+@media (min-width: 481px) {
+  header {
+    justify-content: space-between;
+
+    padding: 3.2rem;
+  }
+
+  header nav {
+    display: flex;
+  }
+
+  header nav ul {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 2.4rem;
+  }
+
+  header nav ul li {
+    display: flex;
+    align-items: center;
+
+    font-size: 1.6rem;
+    color: var(--white);
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0.767rem;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+  }
+}
+
+@media (min-width: 1000px) {
+  main {
+    width: 121.6rem;
+
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  main img {
+    width: 57.4rem;
+  }
+
+  main div {
+    width: 50.2rem;
+  }
+}
