@@ -14,3 +14,18 @@ input {
 ul {
   list-style: none;
 }
+
+@media (min-width: 730px) {
+  .games-banner {
+    display: grid; /* Ativa o grid */
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas */
+    gap: 20px; /* Espaçamento entre os itens */
+}
+}
+@media (min-width: 1030px) {
+  .games-banner {
+    grid-template-columns: repeat(2, 1fr); /* Continua com duas colunas */
+    grid-template-rows: repeat(2, 1fr); /* Adiciona duas linhas */
+    gap: 20px; /* Ajuste do espaçamento */
+  }
+}
